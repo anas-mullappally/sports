@@ -1,8 +1,7 @@
-import React from "react";
 import LottieAnimation from "./LottieAnimation";
-import animationPath1 from "../../public/animation1.json";
 import animationPath2 from "../../public/animation2.json";
 import animationPath3 from "../../public/animation3.json";
+import Image from "next/image";
 
 function AdvantageSection() {
   return (
@@ -25,10 +24,11 @@ function AdvantageSection() {
               {/* Image for the mobile view */}
 
               <div className="flex items-center mx-auto  md:hidden">
-                <LottieAnimation
-                  animationData={animationPath1}
-                  width={350}
-                  height={300}
+                <Image
+                  src="/info-board.webp"
+                  alt="info-boards"
+                  width={457}
+                  height={334}
                 />
               </div>
               <p className=" text-gray-500 leading-6">
@@ -41,10 +41,11 @@ function AdvantageSection() {
               </p>
             </div>
             <div className=" hidden md:flex md:w-1/2 w-full justify-end">
-              <LottieAnimation
-                animationData={animationPath1}
+              <Image
+                src="/info-board.webp"
+                alt="info-board"
                 width={1080}
-                height={500}
+                height={831}
               />
             </div>
           </div>
